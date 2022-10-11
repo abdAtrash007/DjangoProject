@@ -1,0 +1,25 @@
+{% extends 'post/template.html'%}<html lang="en">
+{% block contents%}
+<h3 class="my-5">
+    We find this category
+</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">category Name</th>
+            <th scope="col">category description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ category.id }}</th>
+            <td>{{ category.catName }}</th>
+            <td> {{ category.catDesc}}</th>
+        </tr>
+
+    </tbody>
+</table>
+
+{% endblock%}

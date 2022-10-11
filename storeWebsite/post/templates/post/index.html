@@ -1,0 +1,22 @@
+{% extends 'post/template.html'%}<html lang="en">
+
+{% block contents%}
+    <h1>Hey Pepole</h1>
+    <div>No data are Available  Yet</div>
+    <div>{{ data }}</div>
+    
+    <table>
+        <tr>
+          <th>title</th>
+          <th>content</th>
+        </tr>
+        {% for post in posts %}
+        <tr>
+          <td>{{ post.title }}</th>
+          <td> {{ post.content}}</th>
+        </tr>
+        {% endfor%}
+      </table>
+    
+    {{ post.title }}
+{% endblock%}
